@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Penjualan Barang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo Aplikasi" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulir Transaksi -->
+        <section id="form-transaksi">
+            <div class="container">
+                <h2>Formulir Transaksi</h2>
+                <form id="transaksiForm">
+                    <div class="input-group">
+                        <label for="namaTransaksi">Nama Transaksi</label>
+                        <input type="text" id="namaTransaksi" name="namaTransaksi" required placeholder="Masukkan nama transaksi">
+                    </div>
+                    <div class="input-group">
+                        <label for="jumlah">Jumlah</label>
+                        <input type="number" id="jumlah" name="jumlah" required placeholder="Masukkan jumlah barang">
+                    </div>
+                    <div class="input-group">
+                        <label for="kategori">Kategori</label>
+                        <input type="text" id="kategori" name="kategori" required placeholder="Masukkan kategori barang">
+                    </div>
+                    <button type="submit">Simpan Transaksi</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Daftar Transaksi -->
+        <section id="daftar-transaksi">
+            <div class="container">
+                <h2>Daftar Transaksi</h2>
+                <div class="transaction-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Transaksi</th>
+                                <th>Jumlah</th>
+                                <th>Kategori</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                    </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; rai iim abdurahim </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
